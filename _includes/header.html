@@ -1,3 +1,4 @@
+{% include base.html %}
 <header>
 	<div class="logo">
 		<div class="appIconShadow">
@@ -9,7 +10,7 @@
 				</defs>
 			</svg>
 			{% if page.url != '/' %}
-				<a href="../" target="_self"><img class="headerIcon" src="{{ site.app_icon }}"></a>
+				<a href="../" target="_self"><img class="headerIcon" src="{{base}}/{{ site.app_icon }}"></a>
 			{% else %}
 				<img class="headerIcon" src="{{ site.app_icon }}">
 			{% endif %}

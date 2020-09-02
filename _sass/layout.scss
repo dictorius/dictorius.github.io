@@ -611,6 +611,10 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	border-top: 1px solid black;
+	color: #a5d8c7;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    margin-top:60px
 }
 
 .footerText {
@@ -619,18 +623,19 @@ footer {
 	line-height: 1.5;
 	width: 100%;
 	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .footerIcons {
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
 }
 
 .footerLinks {
+	margin-top: 20px;
 	display: flex;
 	text-align: center;
 	padding-bottom: 70px;
