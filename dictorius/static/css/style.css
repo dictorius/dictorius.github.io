@@ -1,0 +1,391 @@
+
+body {
+    background: #ffffff;
+    font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1, h2 {
+	font-size: 54px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.highlight {
+  background-image: linear-gradient(to right, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight-bg {
+  background-image: linear-gradient(to right, #000000, #000000);
+  padding: 3px 6px;
+  color: white;
+}
+
+.radius {
+  border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+	.top-content h1 {
+		text-align: center;
+		font-size: 32px;
+		line-height: 42px;
+	}
+	.main-margin {
+		margin-top: 112px;
+	}
+	.base-text {
+		text-align: center;
+	}
+	.main-dl {
+		display: flex;
+		justify-content: center;
+	}
+	.main-left {
+		margin-bottom: 48px;
+	}
+	.section-why h1 {
+		font-size: 48px;
+	}
+	.section-why {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	.section-pic {
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+	.section-description p {
+	    text-align: left;
+	}
+	.section-description h2 {
+	    text-align: left;
+	}
+	.list-element p {
+		text-align: left;
+	}
+}
+@media (min-width: 800px) {
+	.main-margin {
+		margin-top: 148px;
+	}
+	.section-why h1 {
+		font-size: 48px;
+	}
+	.section-why {
+		margin-top: 200px;
+		margin-bottom: 200px;
+	}
+	.section-description p {
+	    text-align: left;
+	}
+	.section-description h2 {
+	    text-align: left;
+	}
+}
+
+.flex-center {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center-justify {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+.feature-grid {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(1,minmax(0,1fr));
+}
+@media (min-width: 700px) {
+	.feature-grid {
+		grid-template-columns: repeat(2,minmax(0,1fr));
+	}
+}
+@media (min-width: 1024px) {
+	.feature-grid {
+		grid-template-columns: repeat(3,minmax(0,1fr));
+	}
+}
+
+.features-box {
+	display: flow-root;
+}
+
+.curr-title {
+	margin-top: 64px;
+	font-weight: 600;
+	font-size: 42px;
+	margin-bottom: 16px;
+}
+
+.features-box {
+	margin-top: 16px;
+	padding: 32px;
+	padding-bottom: 16px;
+	box-shadow: 0px 0px 16px 1px #eeeeee;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.action-smaller {
+	font-size: 40px;
+	letter-spacing: .02em;
+	font-weight: 500;
+}
+
+.action-text {
+	font-size: 18px;
+	letter-spacing: .02em;
+/*	font-weight: 500;*/
+}
+
+.features-box h3 {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.feature {
+	margin-bottom: 32px;
+}
+
+.section-logo {
+	width: 48px;
+	height: 48px;
+	margin-bottom: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-logo i {
+	font-size: 24px;
+}
+
+.pic-container {
+	display: flex;
+	justify-content: center;
+}
+
+.section-pic {
+	width: auto;
+	max-height: 500px;
+	max-width: 99%;
+}
+
+.button-section-action {
+	margin-top: 16px;
+	text-align: left;
+}
+
+.button-section-action img {
+	height: 60px;
+}
+
+.section-description h2 {
+	font-size: 30px;
+	line-height: 45px;
+	color: black;
+}
+.section-container-full-bg .section-description h2 { color: #fff; }
+
+.section-description p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 350;
+    color: rgb(85 91 102/1);
+}
+.section-container-full-bg .section-description p { opacity: 0.8; }
+
+
+/***** Top menu *****/
+
+.navbar {
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	width: 100%;
+	margin-bottom: 0;
+	height: 64px;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border: 0;
+	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+}
+
+ul.navbar-nav {
+	font-size: 13px;
+	color: #fff;
+	line-height: 28px;
+}
+
+ul.navbar-nav li a { padding-top: 20px; padding-bottom: 20px; color: black; }
+ul.navbar-nav li a:hover { background: #cdcdcd; color: black; }
+ul.navbar-nav li a:focus { background: #cdcdcd; color: black; outline: 0; }
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background: #cdcdcd; }
+
+
+.navbar-dl {
+	height: 40px;
+}
+
+.navbar-dl-1 {
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+
+.navbar-dl a {
+	width: auto;
+	height: 40px;
+}
+
+.main-dl {
+	margin-top: 24px;
+}
+
+.main-dl a {
+	width: auto;
+	height: 53px;
+}
+
+.main-dl img {
+	width: auto;
+	height: 53px;
+}
+
+.navbar-text {
+	margin-left: 8px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.navbar-dl img {
+	height: 40px;
+}
+
+.navbar-header {
+	width: 100%;
+	height: 40px;
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* Top content */
+
+.main-margin {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.main-padding {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.main-list {
+	margin-top: 32px;
+	margin-bottom: 24px;
+}
+
+.list-element {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.list-check {
+	width: 18px;
+	height: 18px;
+	color: rgb(0, 0, 0);
+}
+
+.base-text p {
+	opacity: 0.8;
+   	color: rgb(46 46 51/1);
+   	letter-spacing: -.01em;
+   	font-weight: 400;
+   	font-size: 16px;
+   	margin: 0;
+}
+
+.list-element p {
+	margin-left: 4px;
+}
+
+.list-special p {
+	font-weight: 800;
+}
+
+.top-content {
+    margin: 0 auto;
+    text-align: left;
+    /*color: #fff;*/
+}
+
+.action-container {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.section-why h1 {
+	font-weight: 500;
+	margin-bottom: 48px;
+}
+
+.section-why p {
+	font-size: 24px;
+}
+
+/* Footer */
+
+.footer {
+	padding-bottom: 32px;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.footer-link {
+	padding-top: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+}
+
+.footer-link a {
+   	text-decoration: none;
+}
+
+.decoration :hover {
+    text-decoration:underline;
+}
+
+.made-by {
+	margin-top: 24px;
+}

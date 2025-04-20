@@ -1,0 +1,93 @@
+{
+    "version": 1,
+    "config": {
+        "support_email": "support.kh9p7@slmail.me"
+    },
+    "index": {
+        "main": {
+            "title": "Build Your Vocabulary Faster, Organize Smarter!",
+            "text": "Start Building Your Vocabulary Today - Download for Free Now!",
+            "items": [
+                {
+                    "text": "Build your own dictionary while learning new language.",
+                    "bold": false
+                },
+                {
+                    "text": "Categorize your words with groups and tags for better structure.",
+                    "bold": false
+                },
+                {
+                    "text": "Easily search for and add new words without any hassle.",
+                    "bold": false
+                },
+                {
+                    "text": "Sync your dictionary across macOS, iOS, and watchOS devices.",
+                    "bold": false
+                },
+                {
+                    "text": "Use flashcards and spaced repetition intervals to boost retention.",
+                    "bold": false
+                },
+                {
+                    "text": "Track learning progress.",
+                    "bold": true
+                },
+                {
+                    "text": "No account creation.",
+                    "bold": true
+                }
+            ]
+        },
+        "why": {
+            "title": "Why?",
+            "text": "If you want to remember new words, this app is your personal vocabulary assistant. It's free to use, and you can upgrade to Pro for an ad-free experience and powerful features like smart tag recommendations. Whether you're on the go or at home, your words are always within reach!"
+        },
+        "features": {
+            "title": "Features",
+            "text": "Don't see what you need?",
+            "mailto_text": "Request a feature!",
+            "items": [
+                {
+                    "title": "Spotlight integration",
+                    "description": "Find terms without opening Dictorius."
+                },
+                {
+                    "title": "Multi-window support",
+                    "description": "Works on both Mac and iPad."
+                },
+                {
+                    "title": "Spaced-repetion intervals",
+                    "description": "Memorize foreign terms permanently."
+                },
+                {
+                    "title": "Flash Cards",
+                    "description": "Review cards with flash cards quickly or use spaced-repetion system to memorize."
+                },
+                {
+                    "title": "Completely private",
+                    "description": "Everything you add to Dictorius is stored locally on your devices and in your private iCloud storage."
+                },
+                {
+                    "title": "Local backups",
+                    "description": "In addition to iCloud storage, you have the option to back up your dictionary manually or on a schedule."
+                }
+            ]
+        }
+    },
+    "support": {
+        "title": "Support"
+    },
+    "footer": {
+        "title": "Ready to conquer your language journey?",
+        "text": "Let's make learning an epic odyssey!",
+        "mailto_text": "Contact",
+        "copyright_text": "Made by Galarius. All rights reserved."
+    },
+    "seo": {
+        "title": "Dictorius - Your Personal Vocabulary Assistant",
+        "description": "Build your own dictionary while learning new language. Categorize your words with groups and tags for better structure. Easily search for and add new words without any hassle. Sync your dictionary across macOS, iOS, and watchOS devices. Use flashcards and spaced repetition intervals to boost retention. Track learning progress.",
+        "keywords": "language,learning,vocabulary,memorization,words,education,study,practice,flashcards,repetition",
+        "author": "Galarius",
+        "copyright": "Galarius"
+    }
+}

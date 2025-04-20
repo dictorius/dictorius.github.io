@@ -1,0 +1,10 @@
+# Python
+
+pyenv
+*.pyc
+
+# Files generated with Flask Frozen
+_site
+
+# Other
+.DS_Store

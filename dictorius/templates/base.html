@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TPZH6H5S');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% block title %} Dictorius {% endblock %}</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:light,lightitalic,regular,regularitalic,medium,mediumitalic,bold,bolditalic,black,blackitalic">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- SEO -->
+  <meta name="title" content="{{ seo.title }}">
+  <meta name="description" content="{{ seo.description }}">
+  <meta name="keywords" content="{{ seo.keywords }}">
+  <meta name="author" content="{{ seo.author }}">
+  <meta name="copyright" content="{{ seo.copyright }}">
+  <meta name="url" content="https://www.dictorius.app/">
+  <meta name="image" content="https://www.dictorius.app/static/img/logo.png">
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:title" content="{{ seo.title }}" />
+  <meta property="og:description" content="{{ seo.description }}" />
+  <meta property="og:image" content="https://www.dictorius.app/static/img/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dictorius.app/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png') }}">
+  <link rel="manifest" href="{{ url_for('static', filename='img/site.webmanifest') }}">
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPZH6H5S"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar" role="navigation">
+    <div class="container" style="max-width: 1150px;">
+      <div class="navbar-header">
+        <div class="navcontainer">
+          <div class="navbar-dl">
+            <div class="navbar-dl-1">
+              <a href="https://www.dictorius.app/" target=”_blank”><img style="border-radius: 15%;"
+                  src="{{ url_for('static', filename='img/logo.png') }}" /></a>
+              <text class="navbar-text highlight">Dictorius</text>
+            </div>
+          </div>
+          <div class="navbar-dl">
+            <a href="" target=”_blank”><img src="{{ url_for('static', filename='img/appstore.svg') }}" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    {% block content %} {% endblock %}
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <div class="footer-link decoration">
+        <a href="mailto:{{ config.support_email }}">{{ footer.mailto_text }}</a>
+      </div>
+    </div>
+    <p class="made-by decoration">{{ footer.copyright_text }}</p>
+  </footer>
+</body>
+
+</html>

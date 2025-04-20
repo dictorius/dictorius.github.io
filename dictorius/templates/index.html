@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}Dictorius{% endblock %}
+
+{% block content %}
+
+<div class="top-content">
+    <div class="container" style="max-width: 1150px;">
+        <div class="row main-margin">
+            <div class="col-md-6 main-left">
+                <h1><span class="highlight">{{ page.slogan }}</span></h1>
+                <div class="main-list base-text">
+                    {% for highlight in page.highlights %}
+                    <div class="{{ 'list-element list-special' if highlight.bold else 'list-element' }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            aria-hidden="true" class="list-check">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <p class="highlight"> {{ highlight.text }} </p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="base-text">
+                    <p>{{ page.download_text }}</p>
+                </div>
+                <div class="main-dl">
+                    <a href="" target=”_blank”><img src="{{ url_for('static', filename='img/appstore.svg') }}" /></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pic-container">
+                    <img class="section-pic" src="{{ url_for('static', filename='img/main-pic.png') }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="max-width: 815px;">
+    <div class="section-why text-center main-padding">
+        <h1>{{ page.why_title }}</h1>
+        <p><span class="highlight"><b>{{ page.why_text }}</b></span></p>
+    </div>
+</div>
+
+
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="curr-title">{{ page.features_title }}</h1>
+            </div>
+        </div>
+        <div class="feature-grid">
+            {% for feature in page.features %}
+            <div class="features-box">
+                <h3 class="highlight">{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="curr-title"></h1>
+                <p class="decoration"> {{ page.features_text }} <a
+                        href="mailto:{{ config.support_email }}?subject=Feature%20Request"> {{ page.features_mailto_text }}
+                    </a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top-content action-container highlight-bg" style="margin-top: 32px;margin-bottom: 32px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 flex-center">
+                <h1 class="text-center action-smaller">{{ footer.title }}</h1>
+            </div>
+            <p class="text-center action-text">{{ footer.text }}</p>
+            <div class="flex-center-justify">
+                <a href=""><img src="{{ url_for('static', filename='img/appstore.svg') }}"
+                        style="height: 60px; margin-top: 16px;" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
